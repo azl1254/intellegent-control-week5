@@ -1,0 +1,21 @@
+Analisis dan Diskusi
+
+Analisis :
+1. Akurasi Deteksi Pose dengan YOLOv8
+YOLOv8 Pose memiliki akurasi tinggi (85-95%) dalam kondisi pencahayaan baik dan pose sederhana, tetapi bisa menurun jika terdapat occlusion atau pose yang kompleks. Model ini menawarkan keseimbangan antara akurasi dan kecepatan untuk berbagai aplikasi.  
+
+2. Performa di Kondisi Pencahayaan Rendah
+Dalam pencahayaan rendah, akurasi YOLOv8 dapat menurun akibat noise dan hilangnya detail visual. Solusi seperti peningkatan kontras, penggunaan kamera dengan sensor cahaya rendah, atau pencahayaan tambahan dapat membantu meningkatkan akurasi deteksi.  
+
+3. Perbandingan dengan MediaPipe dan OpenPose
+YOLOv8 lebih cepat dan efisien untuk real-time dibandingkan OpenPose, tetapi kurang akurat dalam deteksi pose kompleks. MediaPipe lebih ringan dan bisa berjalan tanpa GPU, sementara OpenPose memiliki akurasi terbaik namun membutuhkan daya komputasi lebih besar. Pemilihan metode bergantung pada kebutuhan spesifik aplikasi.
+
+	Diskusi
+1. Penerapan dalam Robotika dan Otomatisasi Industri
+YOLOv8 Pose digunakan untuk interaksi manusia-robot, pemantauan keselamatan, dan kontrol robot kolaboratif berdasarkan gerakan manusia, meningkatkan efisiensi dan keamanan industri.  
+
+2. Tantangan Deteksi Pose Real-Time
+Hambatan utama adalah kecepatan pemrosesan, occlusion, dan variasi pencahayaan serta postur tubuh. Penggunaan perangkat keras yang mendukung GPU atau edge computing dapat membantu mengatasinya.  
+
+3. Meningkatkan Akurasi dengan Dataset Tambahan
+Melatih ulang model dengan dataset beragam, menerapkan data augmentation, dan menggunakan transfer learning  dari dataset besar seperti COCO Keypoints dapat meningkatkan akurasi deteksi pose.
